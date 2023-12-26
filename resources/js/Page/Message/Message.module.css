@@ -1,0 +1,349 @@
+.container {
+    padding: 0.5vw 6.5vw;
+    display: grid;
+    grid-template-columns: 24vw auto;
+    column-gap: 2vw;
+}
+
+.friendlist,
+.messages {
+    background-color: #fefaf7;
+    border-radius: 30px;
+    height: 74vh;
+}
+
+.friendtop {
+    padding: 2vw;
+    display: grid;
+    column-gap: 1vw;
+    grid-template-columns: auto 25vw;
+    align-items: center;
+}
+
+.friendtop button {
+    width: 3vw;
+    height: 3vw;
+    border: 2px solid #d9cbe5;
+    padding: 0;
+    margin-right: 1vw;
+}
+
+.friendtop img {
+    width: 2vw;
+    height: 1.6vw;
+    object-fit: cover;
+}
+.input {
+    border-radius: 39px;
+    border: 2px solid #d9cbe5;
+    width: 16vw;
+    height: 3vw;
+    padding: 0.5vw;
+}
+::placeholder {
+    color: #d9cbe5;
+    font-weight: 700;
+}
+
+.friendcontainer {
+    overflow-y: scroll;
+    height: 55vh;
+}
+.ava {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    padding: 0.8vw 0;
+    margin-top: 0;
+    column-gap: 1vw;
+    cursor: pointer;
+}
+.selected{
+    background-color: #A19CB3!important;
+}
+.ava p {
+    font-weight: 700;
+}
+
+.ava img {
+    width: 4vw;
+    height: 4vw;
+    object-fit: cover;
+    border-radius: 30px;
+    margin-left: 2vw;
+}
+
+.empty {
+    margin-top: 7vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.empty img {
+    width: 6vw;
+    margin-bottom: 1vw;
+}
+
+.empty p {
+    font-weight: 700;
+}
+
+.search {
+    display: flex;
+}
+
+.dialog {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 5vw auto 5vw;
+}
+
+.diatop {
+    display: grid;
+    grid-template-columns: auto 25vw;
+    padding: 0vw 2vw;
+    align-items: center;
+}
+
+.diatop button {
+    margin: 0.5vw;
+}
+
+.noborder {
+    border: none;
+}
+
+.noborder img {
+    height: 3vw;
+}
+
+.dialeft {
+    display: flex;
+    align-items: center;
+}
+.diaright {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.tbut {
+    padding: 0.5vw 2vw;
+}
+.dialog p {
+    font-weight: 700;
+}
+
+.messagelist {
+    height: 100%;
+    width: 100%;
+    background-color: #5c5372;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 1vw 2vw;
+    box-sizing: border-box;
+}
+
+.date {
+    color: #fff;
+    font-weight: 700;
+    width: calc(100% - 2vw);
+    text-align: center;
+}
+.mess {
+    border-radius: 30px;
+    padding: 1vw;
+    max-width: 23vw;
+    width: fit-content;
+    margin: 0.3vw;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.mess p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.time {
+    align-items: end;
+    width: 100%;
+    text-align: end;
+    margin-top: 0.2vw !important;
+    font-size: 1vw;
+}
+
+.right {
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.status {
+    color: #fefaf7;
+    margin-top: 0.2vw !important;
+    font-size: 1vw;
+    font-weight: 400 !important;
+    text-align: end;
+    width: calc(100% - 2.5vw);
+}
+
+.mess-left {
+    background-color: #e7e6f4;
+}
+
+.mess-right {
+    background-color: #d9cbe5;
+}
+.yourmess {
+    padding: 1vw 2vw 1vw 4vw;
+    display: grid;
+    grid-template-columns: auto 3vw;
+    column-gap: 2vw;
+}
+
+.yourmess textarea {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    resize: none;
+}
+
+.yourmess textarea::placeholder {
+    color: #f5a791;
+    font-weight: 400;
+}
+
+.yourmess img {
+    width: 3vw;
+}
+
+.yourmess button {
+    padding: 0;
+    border: none;
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 2vw 3vw;
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 0;
+    }
+
+    .friendlist,
+    .messages {
+        border-radius: 10px;
+        margin: 5vw 0;
+        height: 73vh;
+    }
+
+    .friendtop {
+        grid-template-columns: auto;
+        margin-bottom: 5vw;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+    }
+
+    .friendtop button {
+        width: 10vw;
+        height: 10vw;
+        margin-right: 3vw;
+    }
+
+    .friendtop img {
+        width: 7vw;
+        height: 6.6vw;
+        align-items: center;
+    }
+    .input {
+        width: 60vw;
+        height: 10vw;
+        padding: 0.5vw 3vw;
+    }
+
+    .friendcontainer {
+        height: 67vh;
+    }
+
+    .ava {
+        height: 16vw;
+    }
+
+    .ava img {
+        width: 12vw;
+        height: 12vw;
+        border-radius: 39px;
+    }
+
+    .empty {
+        margin-top: 15vw;
+    }
+
+    .empty img {
+        width: 20vw;
+        margin-bottom: 3vw;
+    }
+
+    .dialog {
+        grid-template-rows: 15vw auto 15vw;
+    }
+
+    .diatop {
+        grid-template-columns: auto 40vw;
+        padding: 0vw 3vw;
+    }
+
+    .diatop button {
+        margin: 1.5vw;
+    }
+
+    .noborder img {
+        height: 8vw;
+    }
+
+    .tbut {
+        padding: 1.5vw 4vw;
+    }
+
+    .messagelist {
+        padding: 5vw 4vw;
+    }
+
+    .mess {
+        border-radius: 10px;
+        padding: 3.5vw;
+        max-width: 50vw;
+        margin: 3vw;
+    }
+
+    .time {
+        margin-top: 1vw !important;
+        font-size: 2.5vw;
+    }
+
+    .status {
+        font-size: 2.5vw;
+        width: calc(100% - 4vw);
+    }
+
+    .yourmess {
+        padding: 3vw 4vw 2vw 6vw;
+        grid-template-columns: auto 10vw;
+        column-gap: 5vw;
+    }
+
+    .yourmess img {
+        width: 10vw;
+    }
+}

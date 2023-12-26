@@ -1,0 +1,253 @@
+.container {
+    padding: 2vw 6.5vw;
+    display: grid;
+    grid-template-columns: auto 27vw;
+    column-gap: 2vw;
+}
+
+.friendlist,
+.applications {
+    background-color: #fefaf7;
+    border-radius: 30px;
+    padding: 2vw;
+    height: 63vh;
+}
+
+.friendtop {
+    display: grid;
+    column-gap: 1vw;
+    grid-template-columns: auto 25vw;
+    margin-bottom: 2vw;
+    align-items: center;
+}
+
+.friendtop button {
+    width: 3vw;
+    height: 3vw;
+    border: 2px solid #d9cbe5;
+    padding: 0;
+    margin-right: 1vw;
+}
+
+.friendtop img {
+    width: 2vw;
+    height: 1.6vw;
+    object-fit: cover;
+}
+input {
+    border-radius: 39px;
+    border: 2px solid #d9cbe5;
+    width: 20vw;
+    height: 3vw;
+    padding: 0.5vw;
+}
+
+::placeholder {
+    color: #d9cbe5;
+    font-weight: 700;
+}
+
+.friendcontainer,
+.applicationslist {
+    overflow-y: scroll;
+    height: 50vh;
+}
+
+.ava {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    gap: 1vw;
+    margin-top: 1vw;
+}
+
+.ava p {
+    font-weight: 700;
+}
+
+.ava img {
+    width: 4vw;
+    height: 4vw;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.friendcard {
+    margin: 1vw 0;
+    display: grid;
+    grid-template-columns: auto 20vw;
+    column-gap: 1vw;
+    align-items: center;
+}
+
+.applications h2 {
+    margin: 0.7vw 0 3vw 0;
+}
+
+.applicationcard {
+    margin: 1vw 0;
+    display: grid;
+    grid-template-columns: auto 7vw;
+    column-gap: 1vw;
+    align-items: center;
+}
+
+.buttonsuser {
+    display: flex;
+    justify-content: end;
+}
+
+.buttonsuser button {
+    height: 3vw;
+    margin: 0.5vw 0;
+    border: none;
+}
+
+.buttonsuser img {
+    width: 2.5vw;
+}
+
+.addfriend {
+    border: solid 2px #f5a791 !important;
+    width: 15vw;
+}
+
+.empty {
+    margin: 3vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.empty img {
+    width: 6vw;
+    margin-bottom: 1vw;
+}
+
+.empty p {
+    font-weight: 700;
+    text-align: center;
+    line-height: 120%;
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 2vw 3vw;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 10vw auto;
+        row-gap: 5vw;
+        column-gap: 0;
+    }
+
+    .friendlist,
+    .applications {
+        border-radius: 10px;
+        padding: 5vw;
+        height: 73vh;
+    }
+
+    .container .dop {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5vw;
+        width: 100%;
+    }
+
+    .container .hiden button {
+        border: none;
+        color: #5c5372;
+        background-color: #fefaf7;
+    }
+
+    .container .hiden button:focus {
+        background-color: #d9cbe5;
+        color: #fefaf7;
+    }
+
+    .friendtop {
+        grid-template-columns: auto;
+        margin-bottom: 5vw;
+    }
+
+    .search {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .friendtop button {
+        width: 10vw;
+        height: 10vw;
+        margin-right: 3vw;
+    }
+
+    .friendtop img {
+        width: 7vw;
+        height: 6.6vw;
+        align-items: center;
+    }
+    input {
+        width: 70vw;
+        height: 10vw!important;
+        padding: 0.5vw 3vw;
+    }
+    .input {
+        width: 70vw;
+    }
+
+    .rot img {
+        transform: rotate(-45deg);
+    }
+
+    .friendcontainer,
+    .applicationslist {
+        height: 67vh;
+    }
+
+    .ava img {
+        width: 12vw;
+        height: 12vw;
+        border-radius: 39px;
+    }
+
+    .friendcard {
+        margin: 3vw 0;
+        grid-template-columns: auto 40vw;
+        column-gap: 3vw;
+    }
+
+    .applications h2 {
+        margin: 0.7vw 0 3vw 0;
+    }
+
+    .applicationcard {
+        margin: 3vw 0;
+        grid-template-columns: auto 28vw;
+    }
+
+    .buttonsuser button {
+        height: 8vw;
+        margin: 0 2.5vw;
+    }
+
+    .buttonsuser img {
+        width: auto;
+        height: 8vw;
+    }
+
+    .addfriend {
+        border: solid 2px #f5a791 !important;
+        width: 15vw;
+    }
+
+    .empty {
+        margin-top: 15vw;
+    }
+
+    .empty img {
+        width: 20vw;
+        margin-bottom: 3vw;
+    }
+}

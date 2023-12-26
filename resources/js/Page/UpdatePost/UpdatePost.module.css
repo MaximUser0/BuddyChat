@@ -1,0 +1,195 @@
+.container {
+    margin: 1.8vw 7.5vw;
+    background-color: #FEFAF7;
+    border-radius: 30px;
+    padding: 2vw 4vw;
+}
+
+.fots {
+    overflow-x: scroll;
+    display: flex;
+    width: 60vw;
+    margin-top: 2vw;
+}
+
+.onefoto {
+    display: flex;
+    align-items: center;
+    margin: 1vw;
+}
+
+.onefoto button img {
+    width: 3vw;
+    margin-left: 1vw;
+}
+
+.onefoto button {
+    border: none;
+}
+
+.fotochka {
+    width: 12vw;
+    height: 8vw;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.allfots {
+    display: grid;
+    grid-template-columns: 60vw auto;
+    column-gap: 2vw;
+    align-items: center;
+}
+
+.textarea {
+    border-radius: 30px;
+    background: #E7E6F4;
+    border: none;
+    resize: none;
+    width: 100%;
+    height: 8vw;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+
+.textarea::placeholder {
+    color: #FEFAF7;
+    font-weight: 700;
+}
+
+.categslist {
+    display: flex;
+    padding: 0.3vw 1.5vw;
+    border-radius: 30px;
+    background-color: #FEFAF7;
+    margin: 1.8vw -3vw;
+    max-width: 60vw;
+    flex-wrap: wrap;
+}
+
+
+
+.categslist button {
+    border: none;
+    color: #5C5372;
+    width: max-content;
+    padding: 0.5vw 1vw;
+    margin: 0.3vw 1vw;
+}
+
+.categslist button:focus {
+    background-color: #D9CBE5;
+    color: #FEFAF7;
+}
+
+.allus {
+    display: grid;
+grid-template-columns: auto 21vw;
+
+}
+
+.save {
+    color: #FEFAF7;
+    background-color: #F5A791;
+}
+
+.buts{
+    display: flex;
+    align-items: end;
+}
+
+.buts button {
+
+    margin: 0vw 0.8vw 0 0.8vw;
+    width: 10vw;
+    padding: 0.8vw;
+    height: 3.5vw;
+}
+
+@media screen and (max-width: 320px) {
+
+    .container {
+        margin: 1.8vw 3vw;
+        border-radius: 10px;
+        padding: 4vw 5vw;
+    }
+    
+    .fots {
+        width: 70vw;
+        margin-top: 5vw;
+    }
+    
+    .onefoto {
+        margin: 1vw;
+    }
+    
+    .onefoto button img {
+        width: 7vw;
+        margin-left: 1vw;
+    }
+    
+    .fotochka {
+        width: 26vw;
+        height: 23vw;
+        border-radius: 10px;
+    }
+    
+    .allfots {
+        grid-template-columns: 60vw 8vw;
+        column-gap: 10vw
+    }
+
+    .hiden {
+        border: none;
+    }
+
+  .rot img {
+        transform: rotate(-45deg);
+     width: 8vw;
+     margin-left: 5vw;
+    }
+
+    
+    .textarea {
+        border-radius: 10px;
+        height: 28vh;
+        padding: 4vw;
+    }
+    
+    .categslist {
+        padding: 0.3vw 1.5vw;
+        border-radius: 10px;
+        margin: 3vw -3vw;
+        max-width: 100%;
+    }
+    
+    
+    .categslist button {
+        padding: 2vw 3vw;
+        margin: 0.3vw 1vw;
+    }
+    
+    .allus {
+        display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    
+    }
+    
+    
+    .buts{
+        display: flex;
+        align-items: end;
+    }
+    
+    .buts button {
+    
+        margin: 0vw 2vw 0 2vw;
+        width: 38vw;
+        padding: 0.8vw;
+        height: 10vw;
+    }
+
+
+
+}

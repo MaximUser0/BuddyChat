@@ -1,0 +1,317 @@
+.butt {
+    justify-content: end;
+    display: flex;
+}
+
+.butt button {
+    border: none;
+
+}
+
+.butt img {
+    width: 4vw;
+}
+
+.top {
+    grid-template-columns: auto 15vw;
+}
+
+.usernew {
+    grid-template-columns: repeat(2, auto);
+}
+
+.dopuscontainer{
+    display: grid;
+    grid-template-columns: 8vw 13vw auto;
+    column-gap: 3vw;
+    position: relative;
+}
+
+.usercontainer {
+    display: grid;
+    grid-template-columns: auto 20vw;
+    column-gap: 3vw;
+    padding: 2vw 3vw;
+    border-radius: 30px;
+  background-color: #FEFAF7;
+  margin: 1.8vw 7.5vw;
+ 
+}
+
+.usercontainer img{
+    width: 7vw;
+    height: 7vw;
+    object-fit: cover;
+    border-radius: 60px;
+}
+
+span{
+    color: #D9CBE5;
+font-family: Wix Madefor Display;
+font-weight: 700;
+margin-right: 1vw;
+}
+
+.butuser{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);  
+  gap: 1vw;
+}
+
+.ex, .cancel{
+    color: #FEFAF7;
+    background-color: #F5A791;
+    border: solid 2px #F5A791;
+  
+}
+
+.confirmuser, .confirmpost{
+    justify-content: center;
+    text-align: center;
+}
+
+.conbtns button{
+margin: 2vw 0.8vw 0 0.8vw;
+width: 10vw;
+padding: 0.8vw;
+}
+.butuser a{
+    color: #F5A791;
+}
+
+.vvv img{
+transform: rotate(-45deg);
+width: 4vw;
+height: 4vw;
+margin-top: -0.3vw;
+object-fit: contain;
+}
+
+@media screen and (max-width: 320px) {
+    .butt img {
+        width: 8vw;
+    }
+    
+    .top {
+        grid-template-columns: auto 40vw;
+    }
+    
+    .usernew {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .dopuscontainer{
+        grid-template-columns: 17vw 33vw auto;
+        column-gap: 1vw;
+        margin-bottom: 2vw;
+    }
+    
+    
+    .usercontainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 3vw;
+        row-gap: 1vw;
+        padding: 3vw 4vw;
+        border-radius: 10px;
+      margin: 1.8vw 3vw;
+    }
+    
+    .usercontainer img{
+        width: 15vw;
+        height: 15vw;
+    }
+    
+    span{
+    margin-right: 2vw;
+    }
+    
+    .butuser{
+      grid-template-rows: repeat(1, 1fr);  
+      grid-template-columns: 35% auto;
+      gap: 2vw;
+    }
+
+    .ex, .cancel{
+       padding: 2vw 0;
+        margin-top: 2vw;
+        margin-top: 0!important;
+    }
+    
+    .conbtns button{
+    margin: 2vw 0.8vw 2vw 0.8vw;
+    width: 40vw;
+    padding: 1.5vw;
+    }
+    
+    .vvv img{
+    width: 9vw;
+    height: 9vw;
+    }
+
+}
+
+
+.new {
+    margin: 1.8vw 7.5vw;
+    background-color: #fefaf7;
+    border-radius: 30px;
+    padding: 2vw 4vw;
+}
+.new h2 {
+    margin-top: 1vw;
+}
+
+.usernew p {
+    margin: 1vw 0;
+    font-size: 1.5vw;
+}
+
+.usernew img {
+    width: 4vw;
+    height: 4vw;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: auto max-content;
+    align-items: center;
+    column-gap: 1vw;
+}
+
+.usernew {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 1vw;
+}
+
+.usernew button {
+    height: 100%;
+    width: 14vw;
+}
+
+.foto {
+    margin-top: 2vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 2vw;
+}
+
+.mini {
+    margin-top: -0.5vw;
+    overflow-y: scroll;
+    height: 36.6vw;
+}
+
+.mini img {
+    width: 17vw;
+    height: 17vw;
+    border-radius: 30px;
+    object-fit: cover;
+    margin: 0.5vw 0;
+}
+
+.maxi img {
+    border-radius: 30px;
+    width: 57vw;
+    height: 35.25vw;
+    object-fit: cover;
+}
+
+.text p {
+    font-size: 1.5vw;
+}
+.hiden{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .hiden{
+        display: block!important;
+    }
+    .hidden{
+        display: block!important;
+        border: none;
+    }
+    .hidden img {
+        width: 7vw!important;
+        object-fit: contain;
+    }
+    .new {
+        margin: 5vw 3vw;
+        border-radius: 10px;
+        padding: 2vw 2.5vw;
+        align-items: center;
+    }
+
+    .usernew p {
+        margin: 1vw 0;
+        font-size: 3.5vw;
+        text-align: end;
+    }
+
+    .usernew .hiden {
+        border: none;
+    }
+
+    .usernew .rot img {
+        transform: rotate(-45deg);
+    }
+
+    .usernew .hiden img {
+        width: 7vw;
+        object-fit: contain;
+    }
+
+    .usernew img {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 30px;
+    }
+
+    .top {
+        grid-template-columns: auto max-content;
+        align-items: center;
+    }
+
+    .usernew {
+        grid-template-columns: 10vw auto 10vw;
+        column-gap: 3vw;
+        align-items: center;
+    }
+
+    .usernew button {
+        display: none;
+    }
+
+    .foto {
+        column-gap: 3vw;
+    }
+
+    .mini {
+        height: 38vw;
+    }
+
+    .mini img {
+        width: 25vw;
+        height: 17vw;
+        border-radius: 10px;
+    }
+
+    .maxi img {
+        border-radius: 10px;
+        width: 60vw;
+        height: 36vw;
+    }
+
+    .text p {
+        font-size: 3.5vw;
+        line-height: 120%;
+    }
+}

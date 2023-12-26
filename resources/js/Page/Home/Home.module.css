@@ -1,0 +1,164 @@
+
+    .new {
+        margin: 1.8vw 7.5vw;
+        background-color: #fefaf7;
+        border-radius: 30px;
+        padding: 2vw 4vw;
+    }
+    .new h2 {
+        margin-top: 1vw;
+    }
+
+    .usernew p {
+        margin: 1vw 0;
+        font-size: 1.5vw;
+    }
+
+    .usernew img {
+        width: 4vw;
+        height: 4vw;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+
+    .top {
+        display: grid;
+        grid-template-columns: auto max-content;
+        align-items: center;
+        column-gap: 1vw;
+    }
+
+    .usernew {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 1vw;
+    }
+
+    .usernew button {
+        height: 100%;
+        width: 14vw;
+    }
+
+    .foto {
+        margin-top: 2vw;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 2vw;
+    }
+
+    .mini {
+        margin-top: -0.5vw;
+        overflow-y: scroll;
+        height: 36.6vw;
+    }
+
+    .mini img {
+        width: 17vw;
+        height: 17vw;
+        border-radius: 30px;
+        object-fit: cover;
+        margin: 0.5vw 0;
+    }
+
+    .maxi img {
+        border-radius: 30px;
+        width: 57vw;
+        height: 35.25vw;
+        object-fit: cover;
+    }
+
+    .text p {
+        font-size: 1.5vw;
+    }
+    .hiden{
+        display: none;
+    }
+    .hidden{
+        display: none;
+    }
+
+    @media screen and (max-width: 320px) {
+        .hiden{
+            display: block!important;
+        }
+        .hidden{
+            display: block!important;
+            border: none;
+        }
+        .hidden img {
+            width: 7vw!important;
+            object-fit: contain;
+        }
+        .new {
+            margin: 5vw 3vw;
+            border-radius: 10px;
+            padding: 2vw 2.5vw;
+            align-items: center;
+        }
+
+        .usernew p {
+            margin: 1vw 0;
+            font-size: 3.5vw;
+            text-align: end;
+        }
+
+        .usernew .hiden {
+            border: none;
+        }
+
+        .usernew .rot img {
+            transform: rotate(-45deg);
+        }
+
+        .usernew .hiden img {
+            width: 7vw;
+            object-fit: contain;
+        }
+
+        .usernew img {
+            width: 10vw;
+            height: 10vw;
+            border-radius: 30px;
+        }
+
+        .top {
+            grid-template-columns: auto max-content;
+            align-items: center;
+        }
+
+        .usernew {
+            grid-template-columns: 10vw auto 10vw;
+            column-gap: 3vw;
+            align-items: center;
+        }
+
+        .usernew button {
+            display: none;
+        }
+
+        .foto {
+            column-gap: 3vw;
+        }
+
+        .mini {
+            height: 38vw;
+        }
+
+        .mini img {
+            width: 25vw;
+            height: 17vw;
+            border-radius: 10px;
+        }
+
+        .maxi img {
+            border-radius: 10px;
+            width: 60vw;
+            height: 36vw;
+        }
+
+        .text p {
+            font-size: 3.5vw;
+            line-height: 120%;
+        }
+    }

@@ -1,5 +1,5 @@
 # BuddyChat
-** An educational project. ** 
-A social network with messenger functions. 
-Developed using: Laravel, React, Vite.
-Created by MaximUser0
+__An educational project.__ <br />
+A social network with messenger functions. <br />
+Developed using: Laravel, React, Vite. <br />
+Created by MaximUser0 <br />
